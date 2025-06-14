@@ -89,7 +89,6 @@
       if (event.target != document.getElementById('searchBox'))
       {
         event.preventDefault();
-        console.info(event.key);
         if (event.key.toLowerCase() in keysPressed) {
           keysPressed[event.key.toLowerCase()] = true;
         }
@@ -332,7 +331,6 @@
 
       const dt = Math.max(0, Math.min(clock.getDelta(), 0.25));
       
-      console.info(dt);
       controls.autoRotateSpeed = 38 * dt;
 
       let index = -1;
